@@ -86,29 +86,7 @@
         })
     </script>
 
-             <!-- deposit button event handler-->
-
-    <!-- <script>
-        const depositBtn = document.getElementById("addDeposit");
-        depositBtn.addEventListener('click',function(event){
-            const depositAmount = document.getElementById("depositAmount").value ;
-            const depositNumber = parseFloat(depositAmount);
-
-            const currentDeposit = document.getElementById("currentDeposit").innerText ;
-            const currentDepositNumber = parseFloat(currentDeposit);
-            const totalDeposit = depositNumber + currentDepositNumber ;
-            document.getElementById("currentDeposit").innerText = totalDeposit;
-
-            document.getElementById("depositAmount").value = "" ;
-
-            const currentBalance = document.getElementById("currentBalance").innerText;
-            const currentBalanceNumber = parseFloat(currentBalance);
-            const totalBalance = depositNumber + currentBalanceNumber ; 
-            document.getElementById("currentBalance").innerText = totalBalance ; 
-        })
-    </script> -->
-
-              <!-- deposit button event handler using function(same work but code optimize)-->
+<!-- deposit button event handler using function(same work but code optimize)-->
 
     <script> 
         const depositBtn = document.getElementById("addDeposit");
@@ -136,7 +114,6 @@
             updateSpanText("currentBalance", -1 * withdrawNumber);
         })
 
-    
         function updateSpanText(id,depositNumber){
             const currentAmount= document.getElementById(id).innerText;
             const currentNumber = parseFloat(currentAmount);
